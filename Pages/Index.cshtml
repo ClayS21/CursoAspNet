@@ -1,10 +1,21 @@
 ﻿@page
 @model IndexModel
 @{
-    ViewData["Title"] = "Home page";
+    ViewData["Title"] = "Home";
 }
 
 <div class="text-center">
     <h1 class="display-4">Welcome to my App</h1>
     <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+
+    <h1>Variáveis</h1>
+
+    @{
+        int num1 = 9;
+        int num2 = 33;
+        int result = num1 + num2;
+    }
+
+    <p>A soma de @num1 + @num2 é @result</p>
+    <p>A soma de @num1 + @num2 é @(num1 + num2)</p>
 </div>
